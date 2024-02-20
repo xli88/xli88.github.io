@@ -1,0 +1,288 @@
+---
+---
+
+@import '{{ site.theme }}';
+
+a {
+    color: #4682b4;
+}
+
+#navigation {
+    width: 100%;
+}
+
+#navigation ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #191764;
+    padding-left: unset;
+    padding-right: unset;
+}
+
+#navigation li {
+    align-self: stretch;
+}
+
+#navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: larger;
+}
+
+#navigation li:hover {
+    background-color: #4682b4;
+}
+
+#navigation li.social {
+    display: flex;
+    align-self: stretch;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#navigation li.social a {
+    align-self: center;
+    padding: 0px;
+}
+
+#navigation li.social img {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    border: unset;
+    border-image: unset;
+    box-shadow: unset;
+}
+
+// #navigation li.social:hover {
+//     background-color: #4682b4;
+// }
+
+.social2 {
+    padding-left: 16px;
+    padding-right: 16px;
+    background-image: url("/resources/GitHub-Mark-Light-32px.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 32px auto;
+        display: inline-block;
+        width:32px;
+        height: 32px;
+}
+
+
+#main_content {
+    width: 55%;
+    padding-top: unset;
+}
+
+#main_content.inner {
+    max-width: unset;
+}
+
+#about ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#about li {
+    float: left;
+    padding: 20px;
+    text-align: center;
+}
+
+// Theorem-like
+.theorem {
+    display: block;
+    margin: 12px 0;
+    font-style: italic;
+    background-color: rgba(70, 130, 180, 0.4);
+    padding: 5px;
+    border: 2px solid;
+}
+.theorem::before {
+    content: 'Theorem. ';
+    font-weight: bold;
+    font-style: normal;
+}
+.theorem[text]::before {
+    content: 'Theorem (' attr(text) '). ';
+}
+
+.proposition {
+    display: block;
+    margin: 12px 0;
+    font-style: italic;
+    background-color: rgba(70, 130, 180, 0.4);
+    padding: 5px;
+    border: 2px solid;
+}
+.proposition::before {
+    content: 'Proposition. ';
+    font-weight: bold;
+    font-style: normal;
+}
+.proposition[text]::before {
+    content: 'Proposition (' attr(text) '). ';
+}
+
+.lemma {
+    display: block;
+    margin: 12px 0;
+    font-style: italic;
+    background-color: rgba(70, 130, 180, 0.4);
+    padding: 5px;
+    border: 2px solid;
+}
+.lemma::before {
+    content: 'Lemma. ';
+    font-weight: bold;
+    font-style: normal;
+}
+.lemma[text]::before {
+    content: 'Lemma (' attr(text) '). ';
+}
+
+.corollary {
+    display: block;
+    margin: 12px 0;
+    font-style: italic;
+    background-color: rgba(70, 130, 180, 0.4);
+    padding: 5px;
+    border: 2px solid;
+}
+.corollary::before {
+    content: 'Corollary. ';
+    font-weight: bold;
+    font-style: normal;
+}
+.corollary[text]::before {
+    content: 'Corollary (' attr(text) '). ';
+}
+
+.conjecture {
+    display: block;
+    margin: 12px 0;
+    font-style: italic;
+    background-color: rgba(70, 130, 180, 0.4);
+    padding: 5px;
+    border: 2px solid;
+}
+.conjecture::before {
+    content: 'Conjecture. ';
+    font-weight: bold;
+    font-style: normal;
+}
+.conjecture[text]::before {
+    content: 'Conjecture (' attr(text) '). ';
+}
+
+// Definition-like
+.definition {
+    display: block;
+    margin: 12px 0;
+    font-style: normal;
+    background-color: rgba(60, 179, 113, 0.4);
+    padding: 5px;
+    border: 2px solid;
+}
+.definition::before {
+    content: 'Definition. ';
+    font-weight: bold;
+    font-style: normal;
+}
+.definition[text]::before {
+    content: 'Definition (' attr(text) '). ';
+}
+
+.remark {
+    display: block;
+    margin: 12px 0;
+    font-style: normal;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    border: 2px solid;
+}
+.remark::before {
+    content: 'Remark. ';
+    font-weight: bold;
+    font-style: normal;
+}
+.remark[text]::before {
+    content: 'Remark (' attr(text) '). ';
+}
+
+.example {
+    display: block;
+    margin: 12px 0;
+    font-style: normal;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    border: 2px solid;
+}
+.example::before {
+    content: 'Example. ';
+    font-weight: bold;
+    font-style: normal;
+}
+.example[text]::before {
+    content: 'Example (' attr(text) '). ';
+}
+
+.exercise {
+    display: block;
+    margin: 12px 0;
+    font-style: normal;
+    background-color: rgba(184, 15, 10, 0.4);
+    padding: 5px;
+    border: 2px solid;
+}
+.exercise::before {
+    content: 'Exercise. ';
+    font-weight: bold;
+    font-style: normal;
+}
+.exercise[text]::before {
+    content: 'Exercise (' attr(text) '). ';
+}
+
+// Proof-like
+.proof {
+    display: block;
+    margin: 12px 0;
+    font-style: normal;
+}
+.proof::before {
+    content: 'Proof. ';
+    font-style: italic;
+}
+.proof[text]::before {
+    content: 'Proof (' attr(text) '). ';
+}
+.proof::after {
+    content: '\25FC';
+}
+
+.solution {
+    display: block;
+    margin: 12px 0;
+    font-style: normal;
+}
+.solution::before {
+    content: 'Solution. ';
+    font-style: italic;
+}
+.solution[text]::before {
+    content: 'Solution (' attr(text) '). ';
+}
+.solution::after {
+    content: '\25FC';
+}
