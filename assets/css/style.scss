@@ -1,31 +1,5 @@
 ---
 ---
-
-@import '{{ site.theme }}';
-
-
-#main_content {
-    width: 75%;
-    padding-top: unset;
-}
-
-#main_content.inner {
-    max-width: unset;
-}
-
-#about ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-#about li {
-    float: left;
-    padding: 20px;
-    text-align: center;
-}
-
 // Theorem-like
 .theorem {
     display: block;
