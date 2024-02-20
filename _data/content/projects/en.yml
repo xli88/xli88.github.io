@@ -1,0 +1,54 @@
+# you can move this content to front matter of [language]/tabs/projects.md
+###########################################################
+#                Projects Page Data
+###########################################################
+page_data:
+  main:
+    header: "Projects"
+    info: " "
+    text_color: "white"
+    # if you don't want to use background image, comment it. back_color will be activated.
+    img: ":projects-heading.jpg"
+    back_color: "lightblue"
+
+  category:
+    - title: "Algo Trading"
+      type: id_algo
+      color: "#2C74B3"
+    - title: "Machine Learning"
+      type: id_ml
+      color: "#62b462"
+    - title: "Data Science"
+      type: id_ds
+      color: "#2FD0ED"
+
+  list:
+    - type: id_ml
+      project_name: "Linear Regression"
+      project_excerpt: "Machine Learning"
+      img: ":project1_thumb.jpg"
+      img_title: ""
+      date: "2024-01-23"
+      post: |
+        # Linear Regression
+        This is project content.
+      
+    - type: id_algo
+      project_name: "WorldQuant Alpha 101"
+      project_excerpt: "Algo Trading"
+      img: ":project1_thumb.jpg"
+      #img_title: " "
+      date: "2024-01-27"
+      post: |
+        # WorldQuant Alpha 101
+        This is project content.
+        
+    - type: id_ds
+      project_name: "LSTM"
+      project_excerpt: "LSTM in Predicting Stock Returns"
+      img: ":project2_thumb.jpg"
+      img_title: " "
+      date: "2024-02-03"
+      post: |
+        # LSTM
+        This is project content.
