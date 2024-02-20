@@ -47,47 +47,37 @@ This experiment is know as [*Buffon's Needle Experiment*](https://en.wikipedia.o
 Let $$x$$ be the distance from the center of the needle to the closest parallel line, and let $$\theta$$ be the acute angle between the needle and one of the parallel lines.
 The uniform PDF of $$x$$ between 0 and $$\frac{a}{2}$$ is 
 
-<p style="text-align: center;">
 $$f_X(x) = \begin{cases} 
   \dfrac{2}{a}: & 0 \leq x \leq \dfrac{a}{2} \\ 
   0: & \text{elsewhere}  
   \end{cases}
 $$
-</p>
 
 Here, $$x=0$$ represents a needle that is centered directly on a line, and $$\frac{a}{2}$$ represents a needle that is perfectly centered between two lines. The uniform PDF assumes the needle is equally likely to fall anywhere in this range, but could not fall outside of it.
 
 The uniform PDF of $$\theta$$ between 0 and $$\frac{\pi}{2}$$ is 
 
-<p style="text-align: center;">
 $$f_\Theta(\theta) = \begin{cases} 
   \dfrac{2}{\pi}: & 0 \leq \theta \leq \dfrac{\pi}{2} \\ 
   0: & \text{elsewhere}  
   \end{cases}
 $$
-</p>
 
 Here, $$\theta=0$$  represents a needle that is parallel to the marked lines, and $$\theta = \frac{\pi}{2}$$ represents a needle that is perpendicular to the marked lines. Any angle within this range is assumed an equally likely outcome.
 
 The two random varibles are independent, so the joint PDF is given by
-<p style="text-align: center;">
 $$f_{X,\Theta}(x, \theta) = \begin{cases} 
   \dfrac{4}{a\pi}: & 0 \leq x \leq \dfrac{a}{2}, 0 \leq \theta \leq \dfrac{\pi}{2} \\ 
   0: & \text{elsewhere}  
   \end{cases}
 $$
-</p>
 
 The needle crosses a line if 
-<p style="text-align: center;">
 $$
 x \leq \frac{l}{2} \sin \theta
 $$
-</p>
 
 Given that $$l < a$$, in this case, integrating the joint probability density function gives the probability that needle will cross a line:
-<p style="text-align: center;">
 $$
 P=\int _{\theta =0}^{\frac{\pi }{2}} \int _{x=0}^{{\frac{l}{2}}\sin \theta }{\frac{4}{a\pi}}\,dx\,d\theta ={\frac {2l}{a\pi }}.
 $$
-</p>
